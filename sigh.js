@@ -21,7 +21,7 @@ module.exports = function(pipelines) {
             { collectInitial: true },
             [
                 glob('entity/*.ts'),
-                ts()
+                ts({target: 'es5'})
             ],
             [
                 glob('index.test.ts'),
